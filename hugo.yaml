@@ -1,18 +1,12 @@
-# Website Identity
 title: Dhananjay Mishra | IIT Kanpur
 baseURL: https://Dhananjaymiitk.github.io/
-theme: github.com/hugoblox/hugo-blox-builder/modules/blox-bootstrap/v5
+theme: github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5
 
-# Module System (This downloads the theme)
 module:
   imports:
-    - path: github.com/hugoblox/hugo-blox-builder/modules/blox-bootstrap/v5
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5
 
-# Site features
 params:
+  author: admin
   description: "Ramanujan Faculty Fellow at IIT Kanpur | RRAM & Neuromorphic Computing"
   day_night: true
-  font_size: L
-
-# Localization
-defaultContentLanguage: en
