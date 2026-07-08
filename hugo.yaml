@@ -6,7 +6,21 @@ module:
   imports:
     - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5
 
+# NEW: Security Policy to allow the theme to work
+security:
+  funcs:
+    getenv:
+      - '^HUGO_'
+      - '^CI$'
+      - '^WC_'  # This allows WC_POST_CSS which was causing the error
+
 params:
   author: admin
   description: "Ramanujan Faculty Fellow at IIT Kanpur | RRAM & Neuromorphic Computing"
   day_night: true
+  font_size: L
+
+# These help Hugo find your content structure
+content:
+  filter:
+    - authors
